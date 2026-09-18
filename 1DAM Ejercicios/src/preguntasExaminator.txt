@@ -1,0 +1,104 @@
+p-¿Qué indica una señal de stop?-85
+r-A-Detención obligatoria siempre-90
+r-B-Ceder el paso si vienen coches-10
+r-C-Detenerse solo si hay peatones-5
+p-¿Cuál es la velocidad máxima en autovía para turismos?-95
+r-A-120 km/h-100
+r-B-100 km/h-20
+r-C-110 km/h-10
+p-¿Se puede usar el móvil con manos libres?-40
+r-A-Sí, está permitido-50
+r-B-No, nunca-50
+r-C-Solo en vías urbanas-10
+p-¿Qué significa la luz amarilla fija del semáforo?-75
+r-A-Detenerse como si fuera roja, salvo falta de seguridad-80
+r-B-Acelerar para pasar rápido-5
+r-C-Pasar con precaución-15
+p-¿Cuál es la tasa máxima de alcohol para noveles?-82
+r-A-0.15 mg/l en aire-90
+r-B-0.25 mg/l en aire-15
+r-C-0.30 mg/l en aire-5
+p-¿En una intersección sin señalizar, quién tiene prioridad?-72
+r-A-El vehículo que aparece por la derecha-85
+r-B-El vehículo más rápido-10
+r-C-El vehículo que circula por la vía principal-20
+p-¿Es obligatorio el uso del cinturón en asientos traseros?-88
+r-A-Sí, en todas las vías-95
+r-B-Solo en vías interurbanas-5
+r-C-Solo si el vehículo es antiguo-0
+p-¿Se puede circular por un carril VAO con un solo ocupante?-30
+r-A-No, salvo excepciones-90
+r-B-Sí, siempre-10
+r-C-Solo si es un vehículo pesado-5
+p-¿Qué profundidad mínima debe tener el dibujo del neumático?-92
+r-A-1.6 milímetros-95
+r-B-2.0 milímetros-10
+r-C-1.0 milímetros-5
+p-¿Cómo afecta la fatiga a la conducción?-78
+r-A-Aumenta el tiempo de reacción-85
+r-B-Disminuye la distancia de frenado-5
+r-C-Mejora la atención visual-0
+p-¿Se debe señalizar un cambio de carril?-94
+r-A-Sí, con el intermitente o el brazo-100
+r-B-No es necesario si no hay tráfico-0
+r-C-Solo si circulamos por autopista-5
+p-¿Qué es la distancia de seguridad?-81
+r-A-La que permite frenar sin colisionar con el de delante-90
+r-B-Dos metros exactos-5
+r-C-La distancia equivalente a un coche-10
+p-¿Cuándo se debe pasar la primera ITV de un turismo nuevo?-70
+r-A-A los cuatro años-95
+r-B-A los dos años-10
+r-C-A los cinco años-5
+p-¿Se puede adelantar por la derecha en una autopista?-25
+r-A-No, salvo retenciones-85
+r-B-Sí, si hay espacio-10
+r-C-Solo si el coche de delante va lento-5
+p-¿Qué luces debe llevar encendidas una moto de día?-77
+r-A-Cruce o corto alcance-90
+r-B-Posición solamente-10
+r-C-Ninguna luz es obligatoria-0
+p-¿A qué velocidad se considera exceso de velocidad en zona de 30?-83
+r-A-A partir de 31 km/h-100
+r-B-A partir de 50 km/h-20
+r-C-A partir de 40 km/h-40
+p-¿Cuál es la función del reposacabezas?-74
+r-A-Evitar el latigazo cervical-95
+r-B-Comodidad del conductor-10
+r-C-Reducir el ruido del viento-0
+p-¿Se puede aparcar en un paso de cebra?-15
+r-A-No, está prohibido-100
+r-B-Solo si es por un momento-5
+r-C-Solo para carga y descarga-2
+p-¿Quién tiene prioridad en una glorieta?-89
+r-A-El vehículo que ya está dentro-98
+r-B-El que intenta entrar-2
+r-C-El vehículo más voluminoso-5
+p-¿Es obligatorio el seguro de responsabilidad civil?-91
+r-A-Sí, para todos los vehículos a motor-100
+r-B-No, es opcional-0
+r-C-Solo para conductores profesionales-5
+p-¿Qué indica una señal triangular con borde rojo?-73
+r-A-Peligro-90
+r-B-Prohibición-10
+r-C-Obligación-5
+p-¿Qué significan las marcas viales azules?-80
+r-A-Estacionamiento limitado por tiempo-95
+r-B-Carga y descarga-5
+r-C-Zona exclusiva para residentes-15
+p-¿Qué factor aumenta el riesgo de distracción?-76
+r-A-El uso del teléfono móvil-95
+r-B-Mirar por los espejos retrovisores-5
+r-C-Escuchar música a volumen bajo-10
+p-¿Cómo se debe circular por una zona residencial?-84
+r-A-A una velocidad máxima de 20 km/h-90
+r-B-Dando prioridad a los vehículos-10
+r-C-A 30 km/h como máximo-20
+p-¿Qué luces se deben usar con niebla densa?-71
+r-A-Luz antiniebla delantera y trasera-95
+r-B-Solo las luces de posición-5
+r-C-Luces largas en todo momento-0
+p-¿Cuál es la función del sistema ABS?-87
+r-A-Evitar el bloqueo de las ruedas en frenadas de emergencia-100
+r-B-Reducir el consumo de combustible-0
+r-C-Aumentar la potencia del motor-0

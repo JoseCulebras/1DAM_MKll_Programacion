@@ -1,0 +1,3 @@
+Ana Lopez*8.5*Programacion
+Carlos Ruiz*4.2*BasesDatos
+Juan Gomez*6.0*Programacion
