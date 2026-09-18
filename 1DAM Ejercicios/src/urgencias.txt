@@ -1,5 +1,0 @@
-1111A;Ana Gómez;28;VERDE
-2222B;Marcos Soler;81;ROJO
-3333C;Lucía Ortiz;45;AMARILLO
-1111A;Ana Tramposa;28;ROJO
-4444D;Felipe Ruiz;69;AMARILLO

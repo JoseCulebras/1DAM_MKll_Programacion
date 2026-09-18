@@ -1,5 +1,0 @@
-u-admin-101
-a-Login correcto-200
-a-Acceso a base de datos-200
-u-invitado-102
-a-Intento de acceso fallido-403
