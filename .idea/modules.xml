@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/1DAM_Ejercicios/1DAM_Ejercicios.iml" filepath="$PROJECT_DIR$/1DAM_Ejercicios/1DAM_Ejercicios.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/1ºDAM MKll Programación.iml" filepath="$PROJECT_DIR$/.idea/1ºDAM MKll Programación.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PRIMER TRIMESTRE/Ejercicios_Practica_Gemini/TEMA 1/Introduccion/Introduccion.iml" filepath="$PROJECT_DIR$/PRIMER TRIMESTRE/Ejercicios_Practica_Gemini/TEMA 1/Introduccion/Introduccion.iml" />
       <module fileurl="file://$PROJECT_DIR$/PRIMER TRIMESTRE/PRIMER TRIMESTRE.iml" filepath="$PROJECT_DIR$/PRIMER TRIMESTRE/PRIMER TRIMESTRE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PRIMER TRIMESTRE/Ejercicios_Practica_Gemini/TEMA 1/TEMA 1.iml" filepath="$PROJECT_DIR$/PRIMER TRIMESTRE/Ejercicios_Practica_Gemini/TEMA 1/TEMA 1.iml" />
     </modules>
   </component>
 </project>
