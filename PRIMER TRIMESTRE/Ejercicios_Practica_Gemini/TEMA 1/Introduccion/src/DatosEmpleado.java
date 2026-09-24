@@ -1,14 +1,17 @@
 public class DatosEmpleado {
     public static void main (String[] args){
         final double PORCENTAJE_RETENCION = 15.0;
-        String nombreEmpleado;
-        int edad = 0;
-        double salarioBase = 0;
-        boolean esIndefinido;
-        char letraInicialApellido;
+        String nombreEmpleado = "Tony Stark";
+        int edad = 30;
+        double salarioBase = 2500;
+        boolean esIndefinido = true;
+        char letraInicialApellido = 'S';
 
-        System.out.println("\nPorcentaje de retención = " + PORCENTAJE_RETENCION);
-        System.out.println("\n");
-        //INCOMPLETO
+        System.out.println("\n- Porcentaje de retención: " + PORCENTAJE_RETENCION + " %");
+        System.out.println("\n- Nombre: " + nombreEmpleado);
+        System.out.println("\n- Edad: " + edad + " años");
+        System.out.println("\n- Salario base: " + salarioBase + " €");
+        System.out.println("\n- Es indefinido: "+ esIndefinido);
+        System.out.println("\n- Primera letra apellido: " + letraInicialApellido);
     }
 }
