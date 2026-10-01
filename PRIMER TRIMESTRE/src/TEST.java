@@ -1,18 +1,16 @@
 import java.util.Scanner;
 
-public class TEST {
-    public static void main (String []args){
-        Scanner scanner = new Scanner(System.in);
+public class GestionNotasAlumnos {
+    public static void main (String[] args){
+        Scanner sc = new Scanner(System.in);
 
-        double radio = 0;
-        double area = 0;
+        String nombre = "";
 
-        System.out.println("\nVamos a averiguar el area de un círculo.");
-        System.out.println("\nIndica cuánto mide el radio del círculo(cm): ");
-        radio = scanner.nextDouble();
+        System.out.println("\nIntroduce el nombre del alumno: ");
 
-        area = Math.PI * Math.pow(radio,2);
+        while ()(
+                nombre = sc.nextLine();
+        )
 
-        System.out.println("\nEl área resultante del circulo es: " + String.format("%.2f", area) + " cm²");
     }
 }
