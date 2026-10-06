@@ -9,15 +9,21 @@ public class Ejercicio_1 {
 
         int numero;
 
-        System.out.println("\nIntroduce un número: ");
-        numero = sc.nextInt();
+        try{
+            System.out.println("\nIntroduce un número: ");
+            numero = sc.nextInt();
 
-        if (numero == 0){
-            System.out.println("\nEl número es igual a cero.");
-        }else if (numero < 0){
-            System.out.println("\nEl número es mayor a cero.");
-        }else{
-            System.out.println("\nEl número es menor a cero.");
+            if (numero == 0){
+                System.out.println("\nEl número es igual a cero.");
+
+            }else if (numero > 0){
+                System.out.println("\nEl número es mayor a cero.");
+
+            }else{
+                System.out.println("\nEl número es menor a cero.");
+            }
+        }catch (Exception e){
+            System.out.println("ERROR: Introduce un número válido (número entero sin decimales)");
         }
     }
 }
