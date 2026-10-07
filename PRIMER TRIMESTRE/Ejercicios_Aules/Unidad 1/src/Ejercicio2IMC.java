@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class IMC {
+public class Ejercicio2IMC {
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
 

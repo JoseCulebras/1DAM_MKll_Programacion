@@ -1,4 +1,4 @@
-public class Ejercicio_2 {
+public class Ejercicio2IntercambioVariables {
     public static void main (String[] args){
 
         System.out.println("Ejercicio 2: Programa que intercambia los valores entre tres variables distintas");
