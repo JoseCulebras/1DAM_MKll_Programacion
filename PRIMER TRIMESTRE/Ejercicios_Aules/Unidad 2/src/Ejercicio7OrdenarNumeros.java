@@ -15,13 +15,13 @@ public class Ejercicio7OrdenarNumeros {
         int tercero = 0;
 
         try{
-            System.out.println("Introduce el primer número: ");
+            System.out.println("\nIntroduce el primer número: ");
             numero1 = sc.nextInt();
 
-            System.out.println("Introduce el segundo número: ");
+            System.out.println("\nIntroduce el segundo número: ");
             numero2 = sc.nextInt();
 
-            System.out.println("Introduce el tercer número: ");
+            System.out.println("\nIntroduce el tercer número: ");
             numero3 = sc.nextInt();
 
             if(numero1 > numero2 && numero2 > numero3){
@@ -56,9 +56,9 @@ public class Ejercicio7OrdenarNumeros {
             }
 
             System.out.println("\nLos números ordenados de menor a mayor son: ");
-            System.out.println("Nº1= " + primero);
-            System.out.println("Nº2= " + segundo);
-            System.out.println("Nº3= " + tercero);
+            System.out.println("Nº1 = " + tercero);
+            System.out.println("Nº2 = " + segundo);
+            System.out.println("Nº3 = " + primero);
 
         }catch (Exception e){
             System.out.println("ERROR: Tienes que introducir un número entero.");
