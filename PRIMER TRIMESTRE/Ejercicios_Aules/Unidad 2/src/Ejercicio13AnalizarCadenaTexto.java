@@ -8,19 +8,34 @@ public class Ejercicio13AnalizarCadenaTexto {
         System.out.println("=========================================================================================================================");
 
         String frase;
+        int contadorCaracteres = 0;
+        int contadorEspacios = 0;
+        int contadorVocales = 0;
+        int contadorConsonantes = 0;
 
         System.out.println("\nIntroduce una frase: ");
         frase = sc.nextLine();
 
         for(int i = 0; i < frase.length(); i++){
 
-            int contadorEspacios = 0;
+            char letra = frase.charAt(i);
 
-            if (frase.contains(" ")){
+            contadorCaracteres++;
+
+            if (frase.charAt(i) == ' '){
                 contadorEspacios++;
+
+            }else if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u'){
+                contadorVocales++;
+
+            }else{
+                contadorConsonantes++;
             }
         }
 
-        System.out.println(c);
+        System.out.println("\nEl número de caracteres es: " + contadorCaracteres);
+        System.out.println("\nEl número de espacios es: " + contadorEspacios);
+        System.out.println("\nEl número de vocales es: " + contadorVocales);
+        System.out.println("\nEl número de consonantes es: " + contadorConsonantes);
     }
 }
