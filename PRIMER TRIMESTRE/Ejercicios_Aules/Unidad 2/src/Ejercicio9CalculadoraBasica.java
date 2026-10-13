@@ -70,6 +70,5 @@ public class Ejercicio9CalculadoraBasica {
                 System.out.println("\nRESULTADO = " + (a / b));
                 break;
         }
-
     }
 }
