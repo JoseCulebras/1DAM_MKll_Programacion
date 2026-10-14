@@ -10,7 +10,7 @@ public class Ejercicio14ClasificacionAsignatura {
         int contador = 1;
         int opcion;
 
-        System.out.println("----------ASIGNATURAS----------\n");
+        System.out.println("\n----------ASIGNATURAS----------\n");
 
         for (TipoAsignatura asignatura : TipoAsignatura.values()){
 

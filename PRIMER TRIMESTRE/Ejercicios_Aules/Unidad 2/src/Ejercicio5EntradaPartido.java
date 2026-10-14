@@ -16,11 +16,10 @@ public class Ejercicio5EntradaPartido {
             System.out.println("\nIntroduce tu edad: ");
             edad = sc.nextInt();
 
-            do{
+            while(edad <= 0){
                 System.out.println("\nIntroduce una edad superior a 0, inténtalo de nuevo: ");
                 edad = sc.nextInt();
-
-            }while(edad <= 0);
+            }
 
             if(edad < 5){
 
