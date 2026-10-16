@@ -29,7 +29,7 @@ public class Ejercicio16Conversor {
                 System.out.println("\nIntroduce los metros: ");
                 valor1 = sc.nextDouble();
 
-                valor2 = valor1 * 3.28;
+                valor2 = valor1 * 3.281;
 
                 System.out.println("\n" + String.format("%.2f", valor1) + " m = " + String.format("%.2f", valor2) + " pies");
                 break;
@@ -38,7 +38,7 @@ public class Ejercicio16Conversor {
                 System.out.println("\nIntroduce los pies: ");
                 valor1 = sc.nextDouble();
 
-                valor2 = valor1 * 0.30;
+                valor2 = valor1 / 3.281;
 
                 System.out.println("\n" + String.format("%.2f", valor1) + " pies = " + String.format("%.2f", valor2) + " m");
                 break;
