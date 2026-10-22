@@ -7,22 +7,37 @@ public class Ejercicio19FactorialNumero {
         System.out.println("Ejercicio 19: Programa que solicita un número entero positivo y calcula su factorial");
         System.out.println("====================================================================================");
 
+        int contador = 1;
         int numero;
-        int factorial = 0;
+        long factorial = 1;
 
-        System.out.println("\nIntroduce un número entero positivo: ");
-        numero = sc.nextInt();
+        try {
+            System.out.print("\nIntroduce un número: ");
+            numero = sc.nextInt();
 
-        for(int i = 0; i < numero; i++){
-            System.out.printf(String.valueOf(i + 1));
+            System.out.print("\n!" + numero + " = ");
 
-            if(i + 1 < numero){
-                System.out.printf(" x ");
+            for (int i = 1; i < numero + 1; i++){
+                if(i <= numero){
+                    System.out.print(contador);
+                    contador++;
+                    factorial *= i;
+                }
+
+                if(i <= numero - 1){
+                    System.out.print(" x ");
+                }
             }
 
-//            factorial =* (i + 1);
-        }
+            if(factorial <= Integer.MAX_VALUE){
+                System.out.print(" = "+ factorial);
 
-        System.out.println("\n\nRESULTADO: " + factorial);
+            }else{
+                System.out.print(" = ERROR (Desbordamiento debido a que el factorial supera el valor máximo de INT)");
+            }
+
+        } catch (Exception e) {
+            System.out.println("\nERROR: Tienes que introducir un número entero.");
+        }
     }
 }
