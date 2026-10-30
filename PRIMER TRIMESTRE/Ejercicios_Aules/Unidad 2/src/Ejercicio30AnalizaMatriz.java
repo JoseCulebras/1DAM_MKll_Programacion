@@ -19,8 +19,6 @@ public class Ejercicio30AnalizaMatriz {
 
         for (int i = 0; i < filas; i++){
             for (int j = 0; j < columnas; j++){
-//                numero = (int)(Math.random() * 10) + 1;
-//                System.out.print(numero + "\t");
                 matriz[i][j] = (int)(Math.random() * 10) + 1;
                 System.out.print(matriz[i][j] + "\t");
 
@@ -51,11 +49,10 @@ public class Ejercicio30AnalizaMatriz {
 
         for(int j = 0; j < columnas; j++){
             sumaColumna = 0;
-            for(int i = ){
-
+            for(int i = 0; i < filas; i++){
+                sumaColumna += matriz[i][j];
             }
+            System.out.println("Suma de la columna " + (j + 1) + ": " + sumaColumna);
         }
-
-//        System.out.println();
     }
 }
