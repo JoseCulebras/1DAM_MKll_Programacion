@@ -26,7 +26,7 @@ public class Ejercicio31MatrizTranspuesta {
 
         matrizTranspuesta = new int[filas][columnas];
 
-        System.out.println("\nMatriz transpuesta (4x3):\n");
+        System.out.println("\n\nMatriz transpuesta (4x3):\n");
 
         for (int i = 0; i < matrizOriginal.length; i++){
             for (int j = 0; j < matrizOriginal[i].length; j++){
