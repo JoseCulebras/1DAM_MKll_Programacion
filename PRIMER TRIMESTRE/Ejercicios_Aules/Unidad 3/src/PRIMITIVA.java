@@ -5,11 +5,33 @@ public class PRIMITIVA {
         Scanner sc = new Scanner(System.in);
 
         int numero;
-        int[] numerosApuesta = new int[6];
+        int[][] numerosApuesta = new int[6][];
         int contadorNumeros = 1;
         boolean repetido = false;
         int numeroReintegro;
         int numerosIntroducidos = 0;
+
+        System.out.println("Vamos a proceder a introducir 6 números enteros...");
+        int[][] numerosApuesta = introducirNumerosApuesta();
+        int apuestaReintegro = introducirReintegro();
+
+        int reintegroGanador = (int)(Math.random() * 9) + 1;
+
+        System.out.println("\n------------------");
+        System.out.println("-   RESULTADOS   -");
+        System.out.println("------------------");
+
+        System.out.println("\nLos números que has introducido son: ");
+
+
+
+
+
+
+
+
+
+
 
         for(int i = 0; i < numerosApuesta.length; i++){
             System.out.print("\nIntroduce el número " + contadorNumeros + ": ");
@@ -72,7 +94,84 @@ public class PRIMITIVA {
         System.out.println("------------------");
 
         System.out.print("\nNúmeros introducidos: ");
+        imprimirMatriz(numerosApuesta, numeroReintegro);
     }
+
+    public static boolean contiene(int[][] numeros, int numero){
+        for (int i = 0; i < numeros.length; i++){
+            for (int j = 0; j < numeros[i].length; j++){
+                if (numeros[i][j] == numero){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static int[][]introducirNumerosApuesta(){
+        Scanner sc = new Scanner(System.in);
+        int[][] matriz = new int[2][3];
+        int contador = 1;
+        int numero;
+
+        for(int i = 0; i < matriz.length; i++){
+            for(int j = 0; j < matriz[i].length; j++){
+                do{
+                    System.out.print("\nIntroduce el número " + contador + ": ");
+                    numero = sc.nextInt();
+
+                    if (numero < 1 || numero > 49){
+                        System.out.println("\nERROR: Introduce un número comprendido entre 1 y 49: ");
+
+                    }else if (contiene(matriz, numero)){
+                        System.out.println("\nERROR: Introduce un número distinto a los anteriores: ");
+                    }
+
+                }while (numero < 1 || numero > 49 || contiene(matriz, numero));
+
+                matriz[i][j] = numero;
+                contador++;
+            }
+        }
+        return matriz;
+    }
+
+    public static void introducirNumeroReintegro(){
+        Scanner sc = new Scanner(System.in);
+
+        int reintegro;
+
+        do{
+            System.out.print("\nIntroduce el reintegro: ");
+            reintegro = sc.nextInt();
+
+            if (reintegro < 1 || reintegro > 9){
+                System.out.println("\nERROR: Introduce un número comprendido entre 1 y 9: ");
+            }
+
+        }while (reintegro < 1 || reintegro > 9);
+    }
+
+    public static void imprimirMatriz(int[][] matriz, int reintegro){
+        for (int i = 0; i < matriz.length; i++){
+            for (int j = 0; j < matriz[i].length; j++){
+                System.out.print(matriz[i][j] + "|");
+            }
+        }
+        System.out.println("Reintegro: " + reintegro);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
     public static void primerosNumeros(){
         Scanner sc = new Scanner(System.in);
