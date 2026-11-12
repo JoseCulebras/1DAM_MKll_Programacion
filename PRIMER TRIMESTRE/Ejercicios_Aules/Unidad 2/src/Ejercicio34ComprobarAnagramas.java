@@ -8,7 +8,6 @@ public class Ejercicio34ComprobarAnagramas {
         String primeraPalabraFraseLimpia;
         String segundaPalabraFrase;
         String segundaPalabraFraseLimpia;
-        String segundaPalabraFraseInvertida = "";
         boolean sonAnagramas = true;
         int[] frecuenciaASCII = new int[256];
         char letraPrimeraPalabra;
@@ -35,29 +34,38 @@ public class Ejercicio34ComprobarAnagramas {
             sonAnagramas = false;
 
         }else{
-            for ()
+            for (int i = 0; i < primeraPalabraFraseLimpia.length(); i++){
+                letraPrimeraPalabra = primeraPalabraFraseLimpia.charAt(i);
+                letraSegundaPalabra = segundaPalabraFraseLimpia.charAt(i);
+
+                frecuenciaASCII[letraPrimeraPalabra]++;
+                frecuenciaASCII[letraSegundaPalabra]--;
+            }
+
+            for (int i = 0; i < frecuenciaASCII.length; i++){
+                if (frecuenciaASCII[i] != 0){
+                    sonAnagramas = false;
+                    break;
+                }
+            }
         }
 
 
+        if (sonAnagramas){
+            if (primeraPalabraFrase.contains(" ") || segundaPalabraFrase.contains(" ")){
+                System.out.println("\nSon anagramas.");
 
+            }else{
+                System.out.println("\nSon palabras anagramas.");
+            }
 
-        for (int i = 0; i < primeraPalabraFraseLimpia.length(); i++){
+        }else{
+            if (primeraPalabraFrase.contains(" ") || segundaPalabraFrase.contains(" ")){
+                System.out.println("\nNo son anagramas.");
 
+            }else{
+                System.out.println("\nNo son palabras anagramas.");
+            }
         }
-
-//        for (int i = segundaPalabraFraseLimpia.length() - 1; i != -1; i--){
-//            segundaPalabraFraseInvertida += segundaPalabraFraseLimpia.charAt(i);
-//            System.out.print(segundaPalabraFraseInvertida.charAt(i));
-//        }
-//
-//        if (primeraPalabraFrase.contains(" ") || segundaPalabraFrase.contains(" ")){
-//            System.out.println("\nSon anagramas");
-//
-//        }else if(primeraPalabraFrase.equals(segundaPalabraFraseInvertida)){
-//            System.out.println("\nSon palabras anagramas");
-//
-//        }else{
-//            System.out.println("\nNo son palabras anagramas");
-//        }
     }
 }
