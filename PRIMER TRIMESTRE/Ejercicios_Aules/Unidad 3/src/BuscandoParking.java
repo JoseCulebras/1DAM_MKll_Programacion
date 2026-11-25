@@ -22,7 +22,7 @@ public class BuscandoParking {
                 System.out.print("\nIntroduce una opción: ");
                 opcion = sc.nextInt();
 
-                while (opcion <= 0 || opcion > 7){
+                while (opcion < 0 || opcion > 7){
                     System.out.print("\nERROR: Introduce una número positivo del 1 al 7: ");
                     opcion = sc.nextInt();
                 }
