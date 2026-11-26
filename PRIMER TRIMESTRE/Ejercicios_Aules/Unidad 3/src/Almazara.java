@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Almazara { //INCOMPLETO
+public class Almazara { // EJERCICIO INCOMPLETO
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
 
