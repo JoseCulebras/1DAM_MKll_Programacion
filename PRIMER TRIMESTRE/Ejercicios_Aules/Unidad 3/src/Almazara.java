@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Almazara { // EJERCICIO INCOMPLETO
+public class Almazara {
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
 
@@ -8,44 +8,53 @@ public class Almazara { // EJERCICIO INCOMPLETO
         String[][] dias_semana = new String[4][7];
         int kilos;
         int kilosParaAlmazara;
+        float litros;
         String calidad;
 
         crear_calendario(citas, dias_semana);
 
-        System.out.print("\nIntroduce el número de kilos que puedes procesar: ");
-        kilos = sc.nextInt();
+        try {
+            System.out.print("\nIntroduce el valor a sumar a los posibles 1000 kilos que la almazara puede procesar: ");
+            kilos = sc.nextInt();
 
-        rellenar_kilos_dia(kilos, citas);
+            rellenar_kilos_dia(kilos, citas);
 
-        System.out.print("\nIntroduce el número de kilos que quieres llevar a la almazara: ");
-        kilosParaAlmazara = sc.nextInt();
+            System.out.print("\nIntroduce el número de kilos que quieres llevar a la almazara: ");
+            kilosParaAlmazara = sc.nextInt();
 
-        System.out.print("\nIntroduce la calidad (suprema/buena/mala/regular): ");
-        calidad = sc.next();
+            System.out.print("\nIntroduce la calidad (suprema/buena/mala/regular): ");
+            calidad = sc.next();
 
-        System.out.println("\n--------------------");
-        System.out.println("| LITROS POR 100Kg |");
-        System.out.println("--------------------");
-        System.out.println(litrosAceite(calidad, kilosParaAlmazara) + " litros");
+            litros = litrosAceite(calidad, kilosParaAlmazara);
 
-        System.out.println("\n-----------------");
-        System.out.println("| TOTAL DE DIAS |");
-        System.out.println("-----------------");
-        System.out.println(dias_para_hacer_aceite(kilosParaAlmazara, citas, dias_semana));
+            if (litros == -1){
+                System.out.print("\nERROR: Calidad no válida.");
 
-        System.out.println("\n---------------------------");
-        System.out.println("| MATRIZ DIAS ACTUALIZADA |");
-        System.out.println("---------------------------");
-        for (int i = 0; i < dias_semana.length; i++){
-            for (int j = 0; j < dias_semana[i].length; j++){
-                if (dias_semana[i][j].equals("*")){
-                    System.out.print("*  " + "\t\t");
-
-                }else{
-                    System.out.print(dias_semana[i][j] + "   ");
-                }
+            }else{
+                System.out.print("\nPara la calidad " + calidad.toLowerCase() + " los litros de aceite que corresponden son: " + litros + " litros");
             }
-            System.out.println();
+
+            System.out.println("\n\n-------------------------------------------");
+            System.out.println("| DIAS NECESARIOS PARA REALIZAR EL ACEITE |");
+            System.out.println("-------------------------------------------");
+            System.out.println(dias_para_hacer_aceite(kilosParaAlmazara, citas, dias_semana));
+
+            System.out.println("\n------------------------------------------");
+            System.out.println("| DIAS EN LOS QUE SE LLEVARÁN LAS OLIVAS |");
+            System.out.println("------------------------------------------");
+            for (int i = 0; i < dias_semana.length; i++){
+                for (int j = 0; j < dias_semana[i].length; j++){
+                    if (dias_semana[i][j].equals("*")){
+                        System.out.printf("%-12s", "*");
+
+                    }else{
+                        System.out.printf("%-12s", dias_semana[i][j]);
+                    }
+                }
+                System.out.println();
+            }
+        } catch (Exception e) {
+            System.out.println("\nERROR: Introduce un valor válido.");
         }
     }
 
@@ -53,9 +62,6 @@ public class Almazara { // EJERCICIO INCOMPLETO
         int diaAleatorio;
         int semana;
 
-        System.out.println("\n----------------");
-        System.out.println("| MATRIZ CITAS |");
-        System.out.println("----------------");
         for (int i = 0; i < citas.length; i++){
             semana = i;
             diaAleatorio = (int)(Math.random() * citas[i].length);
@@ -69,25 +75,20 @@ public class Almazara { // EJERCICIO INCOMPLETO
             System.out.println();
         }
 
-        System.out.println("\n---------------");
-        System.out.println("| MATRIZ DIAS |");
-        System.out.println("---------------");
         for (int i = 0; i < dias_semana.length; i++){
             for (int j = 0; j < dias_semana[i].length; j++){
                 dias_semana [i][j] = "*";
 
-                System.out.print(dias_semana[i][j] + "\t");
             }
-            System.out.println();
         }
     }
 
     public static void rellenar_kilos_dia(int kilos, int[][] citas){
         int numeroAleatorio;
 
-        System.out.println("\n----------------------------");
-        System.out.println("| MATRIZ CITAS ACTUALIZADA |");
-        System.out.println("----------------------------");
+        System.out.println("\n--------------------------------------------");
+        System.out.println("| NÚMERO DE KG QUE PUEDES PROCESAR POR DIA |");
+        System.out.println("--------------------------------------------");
 
         for (int i = 0; i < citas.length; i++){
             for (int j = 0; j < citas[i].length; j++){
@@ -153,6 +154,10 @@ public class Almazara { // EJERCICIO INCOMPLETO
                     citas[i][j] = 0;
                 }
             }
+        }
+
+        if (kilosPendientes > 0){
+            System.out.println("\nNo hay suficiente capacidad en el mes. Quedan " + kilosPendientes + "kg sin procesar.");
         }
 
         return diasUsados;
